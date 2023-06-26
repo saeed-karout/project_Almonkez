@@ -1,9 +1,9 @@
 
-/*function myFunction() {
+function myFunction() {
     alert("يتم تحميل الصفحة يرجى الانتظار قليلا ");
   }
 
-*/
+
 
 function loadImage() {
   alert("يتم تحميل الصور");
