@@ -290,8 +290,7 @@ color: var(--gree-color);
 .cards_prodact .card img{
     border-top-right-radius:30% ;
     border-bottom-left-radius: 30%;
-    width: 100%;
-    min-height: 180px;
+   
 }
 
 .cards_prodact .card:hover{

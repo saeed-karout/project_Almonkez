@@ -22,7 +22,7 @@
     
 </head>
 
-<body >
+<body onload="myFunction()">
 
    <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
@@ -158,7 +158,8 @@
                         </p>
   
                         
-                        <p id='open_windwo' onclick="change_text_btn()" class="btn  rounded-pill main-btn text-uppercase" href="">اطلبني الان </p>
+                        <button id='btn_ord' onclick="text_btn1()" 
+                        ondblclick="change_text_btn1()" class="btn  rounded-pill main-btn text-uppercase" href="">اطلبني الان </button>
                       </div>
                  
 
@@ -187,7 +188,9 @@
     </p>
 
       <div class="d-flex justify-content-center mt-5 mb-5">
-          <a class="btn  rounded-pill main-btn text-uppercase" href="">ابدأ مشروعك</a>
+          <button id="btn_start" onclick="text_btn2()" 
+          ondblclick="change_text_btn2()"
+           class="btn  rounded-pill main-btn text-uppercase" href="">ابدأ مشروعك</button>
       </div>
 
   </div>
