@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +9,11 @@
     <title>Al Mounkez </title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bondi.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/styleHero.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://www.almounkez.com/html5/amz/img/logo/favicon.ico">
@@ -32,20 +34,20 @@
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
          
           <li class="nav-item">
-            <a class="nav-link active p-lg-3 p-2" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active p-lg-3 p-2" aria-current="page" href="index.html">الرئيسية</a>
           </li>
           
           <li class="nav-item">
-            <a class="nav-link p-lg-3 p-2" href="prodact.html">prodact</a>
+            <a class="nav-link p-lg-3 p-2" href="prodact.html">ماذا نقدم</a>
           </li>
           
 
           <li class="nav-item">
-            <a class="nav-link p-lg-3 p-2" href="Interns.html">Interns</a>
+            <a class="nav-link p-lg-3 p-2" href="Interns.html">المتدربين</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link p-lg-3 p-2" href="contact_us.html">contact us </a>
+            <a class="nav-link p-lg-3 p-2" href="contact_us.html">للتواصل</a>
           </li>
 
           
@@ -62,47 +64,61 @@
 
   <!-- start slider  -->
 
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(img/slider1.png)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown"> المنقذ : برمجيات بالطريقة التي تستحق </h2>
+              <h2 class="animate__animated animate__fadeInUp">هل أنت مستعد لتطوير أعمالك .. إذا أنت في المكان المناسب </h3>
+              <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(img/icon.png)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">  حلول متكاملة لشركات الأعمال </h2>
+               <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p> 
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url()">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown"> برامج شاملة تخدم الجميع </h2>
+              <!-- <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p> -->
+              <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
-        <img src="img/slider1.png"  class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First project</h5>
-          
-        </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img src="https://www.almounkez.com/html5/amz/img/section4/webdesign2.jpg"  class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second project</h5>
-          
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="https://www.almounkez.com/html5/amz/img/section4/webdesign1.jpg"  class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          
-          <h5>Third project</h5>
-        
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-   <!-- end slider -->
+  </section>
+  
+  
+  <!-- End Hero -->
 
 
 
@@ -119,7 +135,7 @@
             <div class="container">
               <div class="main-title mt-5 mb-5 position-relative ">
                 <img class="mb-4" src="img/image1.png" alt="" srcset="">
-                <h2 class="text-center " style="color: #e54a1a;">Some stuff About as</h2>
+                <h2  class="text-center " style="color: #e54a1a;">بعض المعلومات عنا </h2>
                 
               </div>
 
@@ -127,22 +143,22 @@
               <div class="content">
 
                 <p class="discription text-center mb-5 text-black-50 m-auto">
-                  <h1 class="text-center">renewable systems</h1>
-                   <p class="text-center text-black-50">Renewable Systems is one of the accredited Syrian companies specialized in administrative development work, finding solutions at the level of information technology, organizing companies' work, and re-engineering work procedures.</p>
+                  <h3 class="text-center">الانظمة المتجدة</h3>
+                   <p class="text-center text-black-50">الأنظمة المتجددة هي إحدى الشركات السورية المعتمدة والمتخصصة في أعمال التطوير الإداري وإيجاد الحلول على مستوى تكنولوجيا المعلومات وتنظيم عمل الشركات وإعادة هندسة إجراءات العمل.</p>
                 </p>
                 
                  
                       <div class="text text-center">
-                            <h2  class="text-center">Business summary</h2>
+                            <h3  class="text-center">ملخص للاعمال</h3>
   
   
                         <p class="text-center text-black-50 fs-6 ">
-                          Automating large and medium-sized companies and providing and customizing programs to suit companies and their needs in all areas of corporate work
-                          Among them, we mention accounting and warehouses, human resources management, customer relations management, car maintenance workshops management, car sales operations management, developing and redesigning websites, developing and developing production processes, and we in the company have extensive experience in developing and maintaining applications And customer business, our experience includes the development of office applications.
+                          أتمتة الشركات الكبيرة والمتوسطة وتوفير البرامج وتخصيصها لتناسب الشركات واحتياجاتها في جميع مجالات عمل الشركات
+                          من بينها ، نذكر المحاسبة والمستودعات ، وإدارة الموارد البشرية ، وإدارة علاقات العملاء ، وإدارة ورش صيانة السيارات ، وإدارة عمليات مبيعات السيارات ، وتطوير مواقع الويب وإعادة تصميمها ، وتطوير عمليات الإنتاج وتطويرها ، ونحن في الشركة لدينا خبرة واسعة في التطوير والصيانة. التطبيقات وأعمال العملاء ، تشمل خبرتنا تطوير تطبيقات المكاتب.
                         </p>
   
                         
-                        <a class="btn  rounded-pill main-btn text-uppercase" href="contact_us.html">Order me </a>
+                        <p id='open_windwo' onclick="change_text_btn()" class="btn  rounded-pill main-btn text-uppercase" href="">اطلبني الان </p>
                       </div>
                  
 
@@ -164,14 +180,14 @@
        
 
   <div class="project text-center pt-5 pb-5 text-light">
-    <h2><em style="color: #e54a1a;">start</em> your project Now</h2>
+    <h2><em style="color: #e54a1a;">ابدأ</em> مشروعك الان</h2>
 
     <p class="text-white-50">
-      You are in the right place, do not hesitate and start your project 
+      أنت في المكان المناسب ، لا تتردد وابدأ مشروعك
     </p>
 
       <div class="d-flex justify-content-center mt-5 mb-5">
-          <a class="btn  rounded-pill main-btn text-uppercase" href="">start project</a>
+          <a class="btn  rounded-pill main-btn text-uppercase" href="">ابدأ مشروعك</a>
       </div>
 
   </div>
@@ -181,8 +197,8 @@
   <div class="blog pt-5 pb-5 ">
     <div class="main-title mt-5 mb-5 position-relative text-center">
       <img class="mb-4" src="img/image1.png" alt="" srcset="">
-      <h2>read our blog</h2>
-      <p class="text-black-50 text-uppercase ">new stories</p>
+      <h2>المدونة</h2>
+      <p class="text-black-50 text-uppercase ">اخبار جديدة </p>
     </div>
 
       <div class="row cards">
@@ -296,24 +312,7 @@
 
 
   </div>
-  <div class="subscribe pt-5 pb-5 text-center text-md-start">
-    <div class="container">
-      <form class="row aligne-items-center">
-        <div class="col-md-6 col-lg-3">
-          <div class="fw-bold fs-5 mb-3">To join our team, please enter your email </div>
-        </div>
-
-        <div class="col-md-6 col-lg-7 mg-5">
-          <input class="w-100 text-light p-2 bg-transparent" type="text" placeholder="Enter Email">
-        </div>
-
-
-         <div class="col-sm-2 col-md-6  col-lg-4 mt-5   ">
-          <input class="btn rounded-pill" type="submit" value="subscribe" >
-         </div>
-      </form>
-    </div>
-  </div>
+ 
      
 <!-- start footer -->
   <div class="footer pt-5 pb-5 text-white-50 text-center text-md-start">
@@ -333,11 +332,11 @@
         </div>
         <div class="col-md-6 col-lg-2">
           <div class="links">
-            <h5 class="text-light">links</h5>
-            <ul class="list-unstyled lh-lg">
-              <li>Home</li>
-              <li>prodact</li>
-              <li>Interns</li>
+            <h5 class="text-light">روابط</h5>
+            <ul class="list-unstyled lh-lg" >
+              <li >الرئيسية</a></li>
+              <li>الخدمات</li>
+              <li>المتدربون</li>
              
             </ul>
           </div>
@@ -345,7 +344,7 @@
 
         <div class="col-md-6 col-lg-2">
           <div class="links">
-            <h5 class="text-light">About us</h5>
+            <h5 class="text-light">تواصل معنا </h5>
             <ul class="list-unstyled lh-lg">
               <li>ركن الدين شارع الحكيم دمشق , سوريا</li>
               <li>هاتف : 51598870 11 +963</li>
@@ -358,7 +357,7 @@
            
         <div class="col-md-6 col-lg-4">
           <div class="contact">
-            <h5 class="text-light">Contact us</h5>
+            
             
             <a class="btn rounded-pill main-btn w-100" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHvpBwQVFhQMccRwwFMmMSvXnTpRcxzDWLbqKrMbWBRCGqmsvgdMLDHMmdLhwGZbwVxRHpr">info@almounkez.com</a>
             <ul class="d-flex mt-5 list-unstyled gap-5">
@@ -394,5 +393,7 @@
   </div>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/all.min.js"></script>
+  <script src="js/script.js"></script>
+  
 </body>
 </html>

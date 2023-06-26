@@ -3,7 +3,7 @@ body {
   }
 
   .profile {
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 70px;
   }
 
@@ -38,3 +38,9 @@ body {
   .card-body li:hover{
     border: 3px solid #e54a1a;
   }
+
+
+
+
+
+  
